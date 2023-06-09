@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #f3f3f3;
+      margin: 0;
+    }
+
+    header {
+      background-color: black;
+      color: silver;
+      padding: 10px;
+      position: relative;
+      justify-content: center;
+    }
+
+    .menu-toggle {
+      display: block;
+      position: relative;
+      width: 25px;
+      height: 25px;
+      float: left;
+    }
+
+    .menu-icon {
+      width: 100%;
+      height: 100%;
+      transition: filter 0.3s;
+    }
+
+    .menu-toggle:hover .menu-icon,
+    .menu-toggle.active .menu-icon {
+      filter: brightness(1.2);
+    }
+
+    .menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      color: silver;
+      display: none;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .menu.active {
+      display: block;
+    }
+
+    .menu li {
+      margin-bottom: 5px;
+      margin-top: 0px;
+    }
+
+    .menu a {
+      color: silver;
+      text-decoration: none;
+    }
+
+    .menu a:hover {
+      background-color: silver;
+      color: black;
+    }
+
+    .hero {
+      background-color: black;
+      color: black;
+      text-align: center;
+      padding: 25px 0;
+    }
+
+    .hero-title {
+      color: silver;
+      margin-top: 0;
+      margin-bottom: 0px;
+    }
+
+    .hero-subtitle {
+      color: silver;
+    }
+
+    .running-ideas {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .model-card {
+      background-color: white;
+      color: black;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: inline-block;
+      text-align: left;
+      width: 20%;
+    }
+
+    .model-card img {
+      width: 100%;
+      height: calc(100vw-100px);
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: black;
+      color: silver;
+      padding: 15px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu-toggle">
+        <img src="logopost.png" alt="Menu" class="menu-icon">
+      </div>
+      <ul class="menu">
+        <li><a href="index.html" class="home-link">Home</a></li>
+        <li><a href="models.html">Models</a></li>
+        <li><a href="bugatti.html" class="bugatti-link">New projects - Bugatti</a></li>
+        <li><a href="bionicle-transformers.html" class="bionicle-transformers-link">New projects - Bionicle and Transformers</a></li>
+        <li><a href="contact.html" class="contact-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1 class="hero-title">Models</h1>
+    <h2 class="hero-subtitle">Lego Ideas -and Rebrickable- </h2>
+  </div>
+
+  <section class="running-ideas">
+    <h2>Bionicle Shall Rise Again and Biomixformers projects</h2>
+    <div class="model-card">
+      <img src="Optimus Prime.png" alt="Model 1">
+      <h3>Optimus Prime x Mata Nui</h3>
+      <p>A fantasy mix of Optimus Prime and Mata Nui. The structure is fully Bionicle using some aspects of the Toa Mata Nui set, the colors and the outer deisgn is based on Optimus from AOE.</p>
+      <a href="https://rebrickable.com/mocs/MOC-143687/AnonymusMocDesigner/optimus-prime-bayformers-x-toa-mata-nui/#details">Learn More and buy the instructions.</a>
+    </div>
+    <div class="model-card">
+      <img src="Nemesis Prime.png" alt="Model 2">
+      <h3>Classic Nemesis Prime version</h3>
+      <p>Just like the original Nemesis Prime: an evil clone of Optimus Prime, with an darker design with red eyes and lights. The idea also includes the Dark Star Saber and a shield.</p>
+      <a href="https://rebrickable.com/mocs/MOC-143709/AnonymusMocDesigner/optimus-prime-bayformers-x-toa-mata-nui-nemesis-prime-skin/#details">Learn More and buy the instructions.</a>
+    </div>
+    <div class="model-card">
+      <img src="Nemesis Prime MECH.png" alt="Model 3">
+      <h3>TFP Nemesis Prime version</h3>
+      <p>Have you watched the serie: Transformers Prime? If you have, you know what is MECH. The humans behind the remote controlled Transformers experiments. This is the MECH version of Nemesis, from the serie.</p>
+      <a href="https://rebrickable.com/mocs/MOC-143756/AnonymusMocDesigner/optimus-prime-bayformers-x-toa-mata-nui-mech-nemesis-prime-skin/#details">Learn More and buy the instructions.</a>
+    </div>
+    <div class="model-card">
+      <img src="Optimus Prime Gold.png" alt="Model 4">
+      <h3>Epic Optimus Prime version</h3>
+      <p>If you know Angry Birds Transformers you probably saw a gold Optimus called Epic Optimus. This time I made this color version too. It's also looking like a Titan Mata Nui, so you can use this to boost the original one. </p>
+      <a href="https://rebrickable.com/mocs/MOC-143767/AnonymusMocDesigner/optimus-prime-bayformers-x-toa-mata-nui-epicgold-optimus-skin/#details">Learn More and buy the instructions.</a>
+    </div>
+    <div class="model-card">
+      <img src="Unicron Megatron_2.png" alt="Model 8">
+      <h3>Unicron/Megatron x Makuta Icarax</h3>
+      <p>If you watched the movie Transformers Prime Beast Hunters, you will know what I say, when I'm talking about Unicron/Megatron. Here comes the infected mind Megatron mixed with the fierceful Makuta Icarax</p>
+      <a href="https://rebrickable.com/mocs/MOC-144494/AnonymusMocDesigner/unicronmegatron-x-makuta-icarax/#details">Learn More and buy the instructions.</a>
+    </div>
+    <div class="model-card">
+      <img src="Bionicle shall rise again first imagine.png" alt="Model 8">
+      <h3>Bionicle shall rise again - first animation</h3>
+      <p>A little bit of animation: the project Bionicle Shall Rise Again is about to bring back the Bionicle G1 to live. You can see here some renders and animations for this projects on my Youtube channel.</p>
+      <a href="https://www.youtube.com/channel/UCntQU5nW_BW5xj7uucFMJmQ">Learn More.</a>
+    </div>
+    <div class="model-card">
+      <img src="Marendar robotic.png" alt="Model 5">
+      <h3>Marendar robotic version</h3>
+      <p>One of the new characters from the upcoming book: Bionicle: The New world. Marendar was a robotic drone first, made by Velika the Great Being. By the time he mutated in Bota Magna and become something else...</p>
+      <a href="https://rebrickable.com/mocs/MOC-144513/AnonymusMocDesigner/project-bionicle-shall-rise-again-marendar-robotic-and-mutated-version-with-na-udui-fan-project/#details">Learn More and buy the instructions.</a>
+    </div>
+    <div class="model-card">
+      <img src="Marendar.png" alt="Model 6">
+      <h3>Marendar mutated version</h3>
+      <p>His whole body became different. His weapons are not the same anymore, his armor far more stronger, even his face is not the same. he became more organic and living thing, but with the same goal: eliminate the toa.</p>
+      <a href="https://rebrickable.com/mocs/MOC-144513/AnonymusMocDesigner/project-bionicle-shall-rise-again-marendar-robotic-and-mutated-version-with-na-udui-fan-project/#details">Learn More and buy the instructions.</a>
+    </div>
+    <div class="model-card">
+      <img src="Marendar two forms with Na-Udui.png" alt="Model 7">
+      <h3>Marendar with his drone</h3>
+      <p>He also got companions, the Na-Udui. The name comes from the matoran language, it means three legged armoured gun. This little drones also got something new: elemental powers with the Bohrok armors they stole.</p>
+      <a href="https://rebrickable.com/mocs/MOC-144513/AnonymusMocDesigner/project-bionicle-shall-rise-again-marendar-robotic-and-mutated-version-with-na-udui-fan-project/#details">Learn More and buy the instructions.</a>
+    </div>
+    <div class="model-card">
+      <img src="Western Star Trucks Lego Ideas10.png" alt="Model 8">
+      <h3>Kabrua</h3>
+      <p>And another character from Bota Magna: Kabrua, the leader of the intelligent Vorox specie. His brutal force is stands out from his followers and also his intelligence is way more impressive than the other from Bara Magna.</p>
+      <a href="https://rebrickable.com/mocs/MOC-144958/AnonymusMocDesigner/project-bionicle-shall-rise-again-kabrua-fan-project/#details">Learn More and buy the instructions.</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2023 AnonymusMocdesigner. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu");
+
+      menuToggle.addEventListener("click", function() {
+        menu.classList.toggle("active");
+        menuToggle.classList.toggle("open");
+      });
+
+      const menuLinks = document.querySelectorAll(".menu li a");
+      menuLinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+          menu.classList.remove("active");
+          menuToggle.classList.remove("open");
+        });
+      });
+    });
+  </script>
+</body>
+</html>

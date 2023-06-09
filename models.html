@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #f3f3f3;
+      margin: 0;
+    }
+
+    header {
+      background-color: black;
+      color: silver;
+      padding: 10px;
+      position: relative;
+      justify-content: center;
+    }
+
+    .menu-toggle {
+      display: block;
+      position: relative;
+      width: 25px;
+      height: 25px;
+      float: left;
+    }
+
+    .menu-icon {
+      width: 100%;
+      height: 100%;
+      transition: filter 0.3s;
+    }
+
+    .menu-toggle:hover .menu-icon,
+    .menu-toggle.active .menu-icon {
+      filter: brightness(1.2);
+    }
+
+    .menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      color: silver;
+      display: none;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .menu.active {
+      display: block;
+    }
+
+    .menu li {
+      margin-bottom: 5px;
+      margin-top: 0px;
+    }
+
+    .menu a {
+      color: silver;
+      text-decoration: none;
+    }
+
+    .menu a:hover {
+      background-color: silver;
+      color: black;
+    }
+
+    .hero {
+      background-color: black;
+      color: black;
+      text-align: center;
+      padding: 25px 0;
+    }
+
+    .hero-title {
+      color: silver;
+      margin-top: 0;
+      margin-bottom: 0px;
+    }
+
+    .hero-subtitle {
+      color: silver;
+    }
+
+    .running-ideas {
+      text-align: center;
+      padding: 50px 0px;
+    }
+
+    .model-card {
+      background-color: white;
+      color: black;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: inline-block;
+      text-align: left;
+      width: 20%;
+    }
+
+    .model-card img {
+      width: 100%;
+      height: calc(100vw-100px);;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: black;
+      color: silver;
+      padding: 15px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu-toggle">
+        <img src="logopost.png" alt="Menu" class="menu-icon">
+      </div>
+      <ul class="menu">
+        <li><a href="index.html" class="home-link">Home</a></li>
+        <li><a href="models.html">Models</a></li>
+        <li><a href="bugatti.html" class="bugatti-link">New projects - Bugatti</a></li>
+        <li><a href="bionicle-transformers.html" class="bionicle-transformers-link">New projects - Bionicle and Transformers</a></li>
+        <li><a href="contact.html" class="contact-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1 class="hero-title">Models</h1>
+    <h2 class="hero-subtitle">Lego Ideas -and Rebrickable- </h2>
+  </div>
+
+  <section class="running-ideas">
+    <h2>Active projects on Lego Ideas and Rebrickable</h2>
+    <div class="model-card">
+      <img src="Pere Marquette 1225 lego ideas1.jpg" alt="Model 1">
+      <h3>Pere Marquette 1225</h3>
+      <p>Part of the Berkshire kit. The lego modell of the Legendary PM 1225, which located in the SRI, Steam Railroading Institute. </p>
+      <a href="https://ideas.lego.com/s/p:a1f5daf3e2cd4e9282512f9ff1bc9911">Learn More and vote for the idea.</a>
+    </div>
+    <div class="model-card">
+      <img src="Pere Marquette 1225 lego ideas 3.jpg" alt="Model 2">
+      <h3>Nickel Plate Road 765</h3>
+      <p>Part of the Berkshire kit. The NKP765 is one of the other types of berkshire, made in the 20th senctury. Located in the Fort Wayne Railroads Museum.</p>
+      <a href="https://ideas.lego.com/s/p:a1f5daf3e2cd4e9282512f9ff1bc9911">Learn More and vote for it.</a>
+    </div>
+    <div class="model-card">
+      <img src="Pere Marquette 1225 lego ideas 2.jpg" alt="Model 3">
+      <h3>Pere Marquette 1223</h3>
+      <p>The sister of the PM 1225. Suddenly this locomotive does not functioning anymore. But with this lego modell, you can bring her live again.</p>
+      <a href="https://ideas.lego.com/s/p:a1f5daf3e2cd4e9282512f9ff1bc9911">Learn More and vote for it.</a>
+    </div>
+    <div class="model-card">
+      <img src="Pere Marquette 1225 lego ideas 4.jpg" alt="Model 4">
+      <h3>Polar Express locomotive</h3>
+      <p>The long awaited steam engine, the Polar Express. One of the most famous animated trains, also one of the most famous christmas train. </p>
+      <a href="https://ideas.lego.com/s/p:a1f5daf3e2cd4e9282512f9ff1bc9911">Learn More and vote for it.</a>
+    </div>
+    <div class="model-card">
+      <img src="Western Star Trucks Lego Ideas8.png" alt="Model 5">
+      <h3>Western Star 5700 Xe</h3>
+      <p>One of the latest and bigest trucks made by Western Star. High roof configuration, with bed and tools.</p>
+      <a href="https://ideas.lego.com/s/p:74966dd15f644304a51ee5d12fc59c4d">Learn More and vote for it.</a>
+    </div>
+    <div class="model-card">
+      <img src="Western Star Trucks Lego Ideas2.png" alt="Model 6">
+      <h3>Western Star 5700 Xe low roof</h3>
+      <p>The roof configurations of the truck.There are three options available: low, midlle and high roof.</p>
+      <a href="https://ideas.lego.com/s/p:74966dd15f644304a51ee5d12fc59c4d">Learn More and vote for it.</a>
+    </div>
+    <div class="model-card">
+      <img src="Western Star Trucks Lego Ideas6.png" alt="Model 7">
+      <h3>Western Star 5700 Xe High roof</h3>
+      <p>This configuration contains a lot of inner and roof detail. It is also customizable in the exterior.</p>
+      <a href="https://ideas.lego.com/s/p:74966dd15f644304a51ee5d12fc59c4d">Learn More and vote for it.</a>
+    </div>
+    <div class="model-card">
+      <img src="Western Star Trucks Lego Ideas10.png" alt="Model 8">
+      <h3>Western Star 5700 Xe tunning version</h3>
+      <p>Have you seen the movie: Transformers Age of Exiction? or The Last Knight? Well, if you have, you will be familiar with this design, because it's based on Optimus Prime, but in black!</p>
+      <a href="https://ideas.lego.com/s/p:74966dd15f644304a51ee5d12fc59c4d">Learn More and vote for it.</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2023 AnonymusMocdesigner. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu");
+
+      menuToggle.addEventListener("click", function() {
+        menu.classList.toggle("active");
+        menuToggle.classList.toggle("open");
+      });
+
+      const menuLinks = document.querySelectorAll(".menu li a");
+      menuLinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+          menu.classList.remove("active");
+          menuToggle.classList.remove("open");
+        });
+      });
+    });
+  </script>
+</body>
+</html>

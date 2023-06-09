@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #f3f3f3;
+      margin: 0;
+    }
+
+    header {
+      background-color: black;
+      color: silver;
+      padding: 10px;
+      position: relative;
+      justify-content: center;
+    }
+
+    .menu-toggle {
+      display: block;
+      position: relative;
+      width: 25px;
+      height: 25px;
+      float: left;
+    }
+
+    .menu-icon {
+      width: 100%;
+      height: 100%;
+      transition: filter 0.3s;
+    }
+
+    .menu-toggle:hover .menu-icon,
+    .menu-toggle.active .menu-icon {
+      filter: brightness(1.2);
+    }
+
+    .menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      color: silver;
+      display: none;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .menu.active {
+      display: block;
+    }
+
+    .menu li {
+      margin-bottom: 5px;
+      margin-top: 0px;
+    }
+
+    .menu a {
+      color: silver;
+      text-decoration: none;
+    }
+
+    .menu a:hover {
+      background-color: silver;
+      color: black;
+    }
+
+    .hero {
+      background-color: black;
+      color: black;
+      text-align: center;
+      padding: 25px 0;
+    }
+
+    .hero-title {
+      color: silver;
+      margin-top: 0;
+      margin-bottom: 0px;
+    }
+
+    .hero-subtitle {
+      color: silver;
+    }
+
+    .running-ideas {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .model-card {
+      background-color: white;
+      color: black;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: inline-block;
+      text-align: left;
+      width: 20%;
+    }
+
+    .model-card img {
+      width: 100%;
+      height: calc(100vw-100px);
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: black;
+      color: silver;
+      padding: 15px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu-toggle">
+        <img src="logopost.png" alt="Menu" class="menu-icon">
+      </div>
+      <ul class="menu">
+        <li><a href="index.html" class="home-link">Home</a></li>
+        <li><a href="models.html">Models</a></li>
+        <li><a href="bugatti.html" class="bugatti-link">New projects - Bugatti</a></li>
+        <li><a href="bionicle-transformers.html" class="bionicle-transformers-link">New projects - Bionicle and Transformers</a></li>
+        <li><a href="contact.html" class="contact-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1 class="hero-title">Bugatti Mistral</h1>
+    <h2 class="hero-subtitle">A hybrid made with Lego Technic, Mindstorm and Icon pieces. </h2>
+  </div>
+
+  <section class="running-ideas">
+    <h2>The project is under working, stay tuned for news!</h2>
+    <div class="model-card">
+      <img src="0250.jpeg" alt="The front">
+      <h3>The front of the Mistral</h3>
+      <p>A new design, using panels for the sharper lines and built in lights. Coming improvments: four lights instead of one. Sharper front and better window lines.</p>
+      <a href="bugatti.html">Link coming soon.</a>
+    </div>
+    <div class="model-card">
+      <img src="0150.jpeg" alt="The wheels">
+      <h3>The wheels</h3>
+      <p>The origninal Bugatti wheel parts used by Lego in black color with the Bugatti logo.</p>
+      <a href="bugatti.html">Link coming soon.</a>
+    </div>
+    <div class="model-card">
+      <img src="0001back.jpeg" alt="The back and the ligths">
+      <h3>The back and the lights</h3>
+      <p>The back is thicker and more rounded than the Chiron's. Further, i will improve the back lights and also the inner structure for the engine.</p>
+      <a href="bugatti.html">Link coming soon.</a>
+    </div>
+    <div class="model-card">
+      <img src="0358.jpeg" alt="The engine">
+      <h3>The engine</h3>
+      <p>The engine in the back. This model is more realistic and complex than the preivous ones. Also it contains pipes like the real one.</p>
+      <a href="bugatti.html">Link coming soon.</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2023 AnonymusMocdesigner. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu");
+
+      menuToggle.addEventListener("click", function() {
+        menu.classList.toggle("active");
+        menuToggle.classList.toggle("open");
+      });
+
+      const menuLinks = document.querySelectorAll(".menu li a");
+      menuLinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+          menu.classList.remove("active");
+          menuToggle.classList.remove("open");
+        });
+      });
+    });
+  </script>
+</body>
+</html>

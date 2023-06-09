@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #f3f3f3;
+      margin: 0;
+    }
+
+    header {
+      background-color: black;
+      color: silver;
+      padding: 10px;
+      position: relative;
+      justify-content: center;
+    }
+
+    .menu-toggle {
+      display: block;
+      position: relative;
+      width: 25px;
+      height: 25px;
+      float: left;
+    }
+
+    .menu-icon {
+      width: 100%;
+      height: 100%;
+      transition: filter 0.3s;
+    }
+
+    .menu-toggle:hover .menu-icon,
+    .menu-toggle.active .menu-icon {
+      filter: brightness(1.2);
+    }
+
+    .menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      color: silver;
+      display: none;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .menu.active {
+      display: block;
+    }
+
+    .menu li {
+      margin-bottom: 5px;
+      margin-top: 0px;
+    }
+
+    .menu a {
+      color: silver;
+      text-decoration: none;
+    }
+
+    .menu a:hover {
+      background-color: silver;
+      color: black;
+    }
+
+    .hero {
+      background-color: black;
+      color: black;
+      text-align: center;
+      padding: 25px 0;
+    }
+
+    .hero-title {
+      color: silver;
+      margin-top: 0;
+      margin-bottom: 0px;
+    }
+
+    .hero-subtitle {
+      color: silver;
+    }
+
+    .running-ideas {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .model-card {
+      background-color: white;
+      color: black;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: inline-block;
+      text-align: left;
+      width: 30%;
+    }
+
+    .model-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: black;
+      color: silver;
+      padding: 15px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu-toggle">
+        <img src="logopost.png" alt="Menu" class="menu-icon">
+      </div>
+      <ul class="menu">
+        <li><a href="index.html" class="home-link">Home</a></li>
+        <li><a href="models.html">Models</a></li>
+        <li><a href="bugatti.html" class="bugatti-link">New projects - Bugatti</a></li>
+        <li><a href="bionicle-transformers.html" class="bionicle-transformers-link">New projects - Bionicle and Transformers</a></li>
+        <li><a href="contact.html" class="contact-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1 class="hero-title">Lego Model Designing and Writing</h1>
+    <h2 class="hero-subtitle">My Passion and Art</h2>
+  </div>
+
+  <section class="running-ideas">
+    <h2>Active projects on Lego Ideas</h2>
+    <div class="model-card">
+      <img src="Pere Marquette 1225 lego ideas1.jpg" alt="Pere Marquette 1225">
+      <h3>Pere Marquette 1225 - the Berkshire kit flagship model</h3>
+      <p>The Berkshire type locomotive, built with Lego parts. Its new inner structure allows for 4 driving axles.</p>
+      <a href="https://ideas.lego.com/s/p:a1f5daf3e2cd4e9282512f9ff1bc9911">Learn More and vote for the idea.</a>
+    </div>
+    <div class="model-card">
+      <img src="Western Star Trucks Lego Ideas10.png" alt="Western Star 5700 Xe">
+      <h3>Western Star 5700 Xe - the flagship model of the Western Star Truck building kit</h3>
+      <p>With this set, you are able to build several trucks.</p>
+      <a href="https://ideas.lego.com/s/p:74966dd15f644304a51ee5d12fc59c4d">Learn More and vote for the idea.</a>
+    </div>
+    <div class="model-card">
+      <img src="Avelia Liberty_6.png" alt="Avelia Liberty">
+      <h3>Avelia Liberty - the electric flagship model of my train project</h3>
+      <p>With a modern and elegant style, this model brings a new vibe to the train sets.</p>
+      <a href="https://ideas.lego.com/s/p:8a84b2f43734481794bb79bcd9e3c828">Learn More and vote for the idea.</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2023 AnonymusMocdesigner. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu");
+
+      menuToggle.addEventListener("click", function() {
+        menu.classList.toggle("active");
+        menuToggle.classList.toggle("open");
+      });
+
+      const menuLinks = document.querySelectorAll(".menu li a");
+      menuLinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+          menu.classList.remove("active");
+          menuToggle.classList.remove("open");
+        });
+      });
+    });
+  </script>
+</body>
+</html>
